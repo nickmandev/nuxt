@@ -15,7 +15,10 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css' }
     ]
   },
-  plugins: ['~/plugins/vuetify.js'],
+  plugins: [
+    '~/plugins/vuetify.js',
+    '~/plugins/vuelidate.js'
+  ],
   css: [
     '~/assets/style/app.styl'
   ],
@@ -28,7 +31,8 @@ module.exports = {
   */
   build: {
     vendor: [
-      '~/plugins/vuetify.js'
+      '~/plugins/vuetify.js',
+      '~/plugins/vuelidate.js'
     ],
     extractCSS: true,
     /*
